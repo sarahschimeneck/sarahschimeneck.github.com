@@ -1,0 +1,17 @@
+---
+layout: page
+title: Projects
+header: Projects
+group: navigation
+---
+{% include JB/setup %}
+
+{% for category in site.categories %}
+  {%if category[0] == 'projects' %}
+	  <ul>
+	    {% assign pages_list = category[1] %}
+	    {% include JB/pages_list %}
+	  </ul>
+  {% endif %}
+{% endfor %}
+
