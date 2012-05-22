@@ -2,9 +2,8 @@
 layout: post
 category : projects
 tags : [art, criticism]
+tagline: building community
 ---
 {% include JB/setup %}
-
-##hi youyith!
 
 {{ 'art-crit-night' | images }}

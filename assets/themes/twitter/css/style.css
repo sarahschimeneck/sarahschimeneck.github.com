@@ -68,4 +68,12 @@ html, body {
 	border:1px solid #4C964D;
 	color:#FFF;
 }
-	
+
+
+/* big hello ======================================================== */
+#hello{
+	font-size:60px;
+	line-height:72px;
+	margin-bottom:100px;
+}
+

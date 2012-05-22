@@ -1,13 +1,28 @@
 ---
-layout: page
-title: Hello World!
-tagline: Supporting tagline
+layout: default
+title: Sarah Schimeneck | Philadelphia, PA
 ---
 {% include JB/setup %}
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<div class="container">
 
+		<h1 id="hello">
+		Sarah Schimeneck is a goal-driven, idealist
+		focused on social responsibility and
+		building artistic communities
+		</h1>
+
+	{% for category in site.categories %}
+	<ul class="unstyled">
+		<li>
+			<strong>{{category[0] | join: "/"}}</strong>
+			<ul class="unstyled">
+			  {% assign posts = category[1] %}
+			  {% for post in posts %}
+			    <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+			  {% endfor %}
+			</ul>
+		</li>
+	</ul>
+	{% endfor %}
+</div>
