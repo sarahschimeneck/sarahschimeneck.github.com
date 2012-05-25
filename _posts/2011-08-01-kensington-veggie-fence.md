@@ -6,6 +6,6 @@ tagline: positive boundaries
 ---
 {% include JB/setup %}
 
-{% gallery name: veggie-fence %}
-<img title="{{ file.title }}" src="{{ file.url }}" />
-{% endgallery %}
+{% for i in (1..4) %}
+  <img alt="Veggie Fence {{ i }}" src="/images/veggie-fence/fence-{{ i }}.jpg" />
+{% endfor %}
